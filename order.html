@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order – Cocalabs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="order">
+
+<div id="loading-overlay">
+  <div class="loading-text">Preparing your cozy order...</div>
+  <div class="shutter shutter-top"></div>
+  <div class="shutter shutter-middle"></div>
+  <div class="shutter shutter-bottom"></div>
+</div>
+
+<header class="section-blue1 fade-in-block">
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="images/logo.png" class="logo-img" alt="Cocalabs logo">
+      <span class="logo-text">Cocalabs</span>
+    </div>
+    <nav class="nav-bar">
+      <a href="index.html" data-nav-link>Home</a>
+      <a href="order.html" data-nav-link>Order</a>
+      <a href="about.html" data-nav-link>About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-blue2 fade-in-block scroll-fade">
+    <h1 class="title">Place Your Cozy Delivery Order</h1>
+    <p class="subtitle">
+      Fill out the form below and we’ll bake a tray just for you, then deliver it to your door.
+    </p>
+  </section>
+
+  <section class="section-blue3 fade-in-block scroll-fade">
+    <div class="order-layout">
+      <div class="order-form-wrap">
+        <h2 class="section-title">Order Form</h2>
+        <form class="order-form" id="order-form">
+          <label>Full Name</label>
+          <input type="text" name="name" required>
+
+          <label>Email</label>
+          <input type="email" name="email" required>
+
+          <label>Phone Number</label>
+          <input type="tel" name="phone" required>
+
+          <label>Delivery Address</label>
+          <input type="text" name="address" required>
+
+          <label>Pan Size</label>
+          <select name="size" required>
+            <option value="">Select size</option>
+            <option value="Small">Small (8 pieces)</option>
+            <option value="Medium">Medium (12 pieces)</option>
+            <option value="Large">Large (16 pieces)</option>
+          </select>
+
+          <label>Flavor</label>
+          <select name="flavor" required>
+            <option value="">Select flavor</option>
+            <option value="Classic">Classic</option>
+            <option value="Walnut">Walnut</option>
+            <option value="Hazelnut">Hazelnut</option>
+            <option value="Double Chocolate">Double Chocolate</option>
+          </select>
+
+          <label>Notes (no nuts, extra gooey, etc.)</label>
+          <textarea name="notes" rows="3"></textarea>
+
+          <button type="submit" class="btn primary-btn">Submit Order</button>
+        </form>
+      </div>
+
+      <div class="order-info-wrap">
+        <h2 class="section-title">Order Summary</h2>
+        <div id="order-summary">
+          <p>No order yet. Fill out the form to see your cozy summary.</p>
+        </div>
+        <h2 class="section-title">Delivery Details</h2>
+        <p>
+          Cocalabs delivers brownies directly to your door. Once you submit your order,
+          we’ll send an email to you and to our kitchen at
+          <strong>rannvijaypadhi@gmail.com</strong> with your order details.
+        </p>
+        <p>
+          You’ll receive a delivery window and a confirmation link. All deliveries are
+          scheduled based on our midnight baking queue.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-blue4 fade-in-block scroll-fade">
+    <h2 class="section-title">Delivery‑Only Kitchen</h2>
+    <p>
+      We don’t offer pickup or a physical storefront. Cocalabs is built around the idea
+      of cozy brownies arriving when you need them, without you having to leave home.
+    </p>
+    <p>
+      If you’re planning a party, event, or late‑night study session, mention it in your
+      notes and we’ll help you plan the right amount of brownies.
+    </p>
+  </section>
+
+</main>
+
+<footer class="section-blue4 footer-section fade-in-block">
+  <div class="footer-inner">
+    <p>Once your order is submitted, check your email for delivery details.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
